@@ -5,14 +5,13 @@
   document.querySelector(".message").textContent=msg;
   document.querySelector(".number").textContent=randomNumber;
     document.querySelector(".number").style.backgroundColor=bgcolor;
-    document.querySelector(".match").setAttribute("disabled", "");
-    
+    document.querySelector(".match").setAttribute("disabled", ""); 
  }
  document.querySelector(".match").addEventListener("click",function(){
   const userNumber= Number(document.querySelector(".guess").value);
   
   if(userNumber){
-    if(chances>1){
+    if(chances>=1){
       if(userNumber>randomNumber){
         document.querySelector(".message").textContent=(" 🫳Guess lower Number");
       }
@@ -23,13 +22,12 @@
       messages("👍😀You are Winner👍","green");
       }
     }else{
-      messages("😒😒You are Looser","red");
+      messages("😒👎You are Looser👎😒","red");
       } 
     chances--;
     
     if(chances>=0)
-      document.querySelector(".score").textContent=chances;
-    
+      document.querySelector(".score").textContent=chances; 
   }
   else{
     document.querySelector(".message").textContent=("😬 Enter Number before click");
@@ -43,5 +41,5 @@ document.querySelector(".again").addEventListener("click",function(){
  document.querySelector(".match").removeAttribute("disabled");
  document.querySelector(".message").textContent=("Let's Start");
  document.querySelector(".score").textContent=chances;
- document.querySelector(".number").style.backgroundColor="none";
+ document.querySelector(".number").style.backgroundColor="";
 });
