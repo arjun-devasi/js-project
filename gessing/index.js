@@ -41,5 +41,5 @@ document.querySelector(".again").addEventListener("click",function(){
  document.querySelector(".match").removeAttribute("disabled");
  document.querySelector(".message").textContent=("Let's Start");
  document.querySelector(".score").textContent=chances;
- document.querySelector(".number").style.backgroundColor="";
+ document.querySelector(".number").style.backgroundColor="none";
 });
