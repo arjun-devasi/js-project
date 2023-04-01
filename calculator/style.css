@@ -13,6 +13,28 @@ body{
     justify-content: center;
     align-items: center;
 }
+nav{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+
+}
+a{
+    color: #000;
+    text-decoration: none; 
+    font-weight: 400; 
+    font-size: large;
+   border-radius: 8px;
+    background-color: #DDC3A5;
+    padding: 6px;
+}
+a:hover{
+    cursor: pointer;
+   
+
+}
 H1{
     text-transform: uppercase;
     color:#f8fcff;

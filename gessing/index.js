@@ -11,7 +11,7 @@
   const userNumber= Number(document.querySelector(".guess").value);
   
   if(userNumber>=0){
-    if(chances>0){
+    if(chances>=1){
       if(userNumber>randomNumber){
         document.querySelector(".message").textContent=(" 🫳Guess lower Number");
       }

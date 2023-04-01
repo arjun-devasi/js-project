@@ -11,6 +11,31 @@ body{
     min-height: 100vh;
     
 }
+nav{
+   
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    background-color: #4d5964;
+    width: 100vw;
+    top: 0;
+    height: 50px;
+}
+a{
+    color: #000;
+    text-decoration: none; 
+    font-weight: 400; 
+    font-size: large;
+   border-radius: 8px;
+    background-color: #DDC3A5;
+    padding: 6px;
+    margin: auto;
+}
+a:hover{
+    cursor: pointer;
+}
 .container{
     max-width: 450px;
     background: #003333;
