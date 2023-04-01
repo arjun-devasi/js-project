@@ -10,8 +10,8 @@
  document.querySelector(".match").addEventListener("click",function(){
   const userNumber= Number(document.querySelector(".guess").value);
   
-  if(userNumber){
-    if(chances>=1){
+  if(userNumber>=0){
+    if(chances>0){
       if(userNumber>randomNumber){
         document.querySelector(".message").textContent=(" 🫳Guess lower Number");
       }
@@ -30,7 +30,7 @@
       document.querySelector(".score").textContent=chances; 
   }
   else{
-    document.querySelector(".message").textContent=("😬 Enter Number before click");
+    document.querySelector(".message").textContent=("😬 Enter Valid Number before click");
   }
  });
 document.querySelector(".again").addEventListener("click",function(){
@@ -41,5 +41,5 @@ document.querySelector(".again").addEventListener("click",function(){
  document.querySelector(".match").removeAttribute("disabled");
  document.querySelector(".message").textContent=("Let's Start");
  document.querySelector(".score").textContent=chances;
- document.querySelector(".number").style.backgroundColor="none";
+ document.querySelector(".number").style.backgroundColor="";
 });
