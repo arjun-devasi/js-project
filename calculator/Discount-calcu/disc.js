@@ -2,7 +2,7 @@ let priceCost= document.querySelector("#price");
 let discount=document.querySelector("#dicount");
 let saving=document.querySelector("#savedAmt");
 let finalCost=document.querySelector("#finalPrice");
-let reset=document.querySelector(".reset");
+
 
 priceCost.addEventListener("input",calculate)
 discount.addEventListener("input",calculate)
