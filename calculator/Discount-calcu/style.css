@@ -39,7 +39,7 @@ a:hover{
 
 }
 .container{
-    width: 500px;
+    max-width: 390px;
     margin: auto;
     background-color: #fff;
     border-radius: 13px;
