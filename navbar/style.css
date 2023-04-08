@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#4c3c3c ;
+    flex-wrap: wrap;
+    width: 100%;
+   padding: 0 100px;
+   height: 70px;
+}
+ .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding:0 0 0 40px;
+    /* line-height: 70px; */
+}
+  nav .nav-item li{
+    list-style: none;
+    padding: 0 15px;
+}
+ .navbar .logo{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 50px;
+    letter-spacing: -1px;
+}
+nav .nav-item li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav form{
+   display: flex; 
+   height:40px ;
+   padding:2px ;
+   background: #1e232b;
+   min-width: 18% !important;
+   border-radius: 2px;
+   border: 1px solid #f1f1f1;
+   border-radius: 36px;
+}
+
+nav form .search-data {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    font-weight: 500;
+    background: none;
+}
+nav form button{
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    background: #26d63b;
+    border-radius: 2px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all .2s;
+}
+nav form button:hover{
+    background: #075710;
+}
+nav .menu-icon,
+nav .search-icon,
+nav .cancel-icon{
+    width:40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+nav .menu-icon span,
+nav .search-icon,
+nav .cancel-icon{
+    display: none;
+}
+@media(max-width:1200px){
+    nav{
+        padding: 0px 50px;
+    }
+}
+@media(max-width:1140px){
+  nav{
+      padding: 0px;
+  }
+  nav .logo{
+flex: 2;
+text-align: center;
+font-size: 22px;
+  }
+  nav .nav-item{
+      position: fixed;
+      z-index: 99;
+      top: 70px;
+      width: 100%;
+      left: -100%;
+      height: 100%;
+      padding: 10px 50px 0 50px;
+      text-align: center;
+      background: #14181f;
+      display: inline-block;
+      transition: left 0.3s ease;
+  }
+  nav .nav-item.active{
+      left: 0px;
+  }
+  nav .nav-item li{
+      line-height: 35px;
+      margin: 30px 0;
+
+  }
+  nav .nav-item li a{
+      font-size: 20px;
+  }
+  nav form{
+      position: absolute;
+      top: 70px;
+      right: 50px;
+      opacity: 0;
+      pointer-events: none;
+      transition: top 0.3s ease,opacity 0.1s ease;
+  }
+}
